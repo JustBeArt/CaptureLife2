@@ -1,10 +1,17 @@
+h1 {
+  margin-left: 1rem;
+  font-size: 250%;
+  font-weight: bold;
+}
 
-head{
-
+h4 {
+  margin-left: 1rem;
+  font-size: 150%;
 }
 
 body {
   padding-top: 5rem;
+  background-color: white;
 }
 .starter-template {
   padding: 3rem 1.5rem;
