@@ -1,23 +1,191 @@
+#menuBurger
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  padding-bottom: 50px;
+
+  z-index: 1;
+  /*don't stress about it yet this is a browser prefix, so your navbar displays correctly
+  we will talk about that later*/
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuBurger input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuBurger span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuBurger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuBurger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuBurger input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuBurger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuBurger input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuBurger input:checked ~ ul
+{
+  transform: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-  margin-left: 1rem;
+  font-family: 'Josefin Slab', serif;
   font-size: 250%;
   font-weight: bold;
+  color: black;
+  margin: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
-  margin-left: 1rem;
+  font-family: 'Josefin Slab', serif;
   font-size: 150%;
+  margin: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 body {
-  padding-top: 5rem;
-  background-color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: large;
+  background-color: e8d3ff;
+  margin: 0;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-div.text {
-  position:absolute;
 
+p {
+  margin: 2rem;
+}
+
+footer {
+  display: flex;  /* allows use of "justify-content" property */
+  justify-content: center;  /* horizontally centers the contents (the social icons) */
+  background-color: white;
+  height: 100px;
+  padding: 20px;
+}
+
+footer a {
+  margin: 5px;
+  text-decoration: none!important;
+}
+
+.social-icon {
+  display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+  width: 100px;
+  height: 100px;
+  color: #666;
+  background-color: white;
+  justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+  align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
+  border-radius: 50%;  /* makes it round (circle if width and height are the same) */
+  font-size: 30px;
+}
+
+.social-icon:hover {
+  color: #222;  /* change color when hover over the link */
 }
