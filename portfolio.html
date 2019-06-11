@@ -31,28 +31,60 @@
 	  </div>
 	</nav>
 
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+
  <!-- Photo Grid -->
 	<div class="row">
 	  <div class="column">
-	    <img src="images/Bambi.jpg" style="width:100%">
-	    <img src="images/Aurellia.jpg" style="width:100%">
-	    <img src="images?Big Ben.jpg" style="width:100%">
-	    <img src="images/carozza.jpg" style="width:100%">
-	    <img src="images/Contrada San Giovanni.jpg" style="width:100%">
-	    <img src="images/Irina.jpg" style="width:100%">
-	    <img src="images/Lilie.jpg" style="width:100%">
+	    <img id="myImg" src="images/Bambi.jpg" alt="Bambi" style="width:100%">
+	    <img id="myImg" src="images/Aurellia.jpg" style="width:100%">
+	    <img id="myImg" src="images?Big Ben.jpg" style="width:100%">
+	    <img id="myImg" src="images/carozza.jpg" style="width:100%">
+	    <img id="myImg" src="images/Contrada San Giovanni.jpg" style="width:100%">
+	    <img id="myImg" src="images/Irina.jpg" style="width:100%">
+	    <img id="myImg" src="images/Lilie.jpg" style="width:100%">
 	  </div>
 	  <div class="column">
-	    <img src="images/Dori.jpg" style="width:100%">
-	    <img src="images/I AMsterdam.jpg" style="width:100%">
-	    <img src="images/Lake District.jpg" style="width:100%">
-	    <img src="images/New Forest Dream.jpg" style="width:100%">
-	    <img src="images/Richmond Park Autumn.jpg" style="width:100%">
-	    <img src="images/Rokas.jpg" style="width:100%">
+	    <img id="myImg" src="images/Dori.jpg" style="width:100%">
+	    <img id="myImg" src="images/I AMsterdam.jpg" style="width:100%">
+	    <img id="myImg" src="images/Lake District.jpg" style="width:100%">
+	    <img id="myImg" src="images/New Forest Dream.jpg" style="width:100%">
+	    <img id="myImg" src="images/Richmond Park Autumn.jpg" style="width:100%">
+	    <img id="myImg" src="images/Rokas.jpg" style="width:100%">
 	  </div>
 
 
 	</div>
+
+
+	<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 
 	<script>
 // Get the elements with class="column"
