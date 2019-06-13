@@ -118,6 +118,7 @@
 {
   padding: 10px 0;
   font-size: 22px;
+  color: black;
 }
 
 /*
@@ -133,13 +134,24 @@
 }
 
 h1 {
-  font-family: 'Josefin Slab', serif;
-  font-size: 250%;
-  font-weight: bold;
+  font-family: 'Tangerine', cursive;
+  font-size: 600%;
+  font-weight: lighter;
   color: black;
   margin: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-shadow: 2px 2px #12d3cf;
+}
+
+h2 {
+font-family: 'Josefin Slab', serif;
+font-size: 250%;
+font-weight: bold;
+color: black;
+margin: 2rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
 
 h4 {
@@ -148,6 +160,14 @@ h4 {
   margin: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+h3 {
+  font-family:'Tangerine', cursive;
+  font-size: :300%;
+  position: absolute;
+  left: 460px;
+  top: 240px;
 }
 
 body {
