@@ -119,6 +119,7 @@
   padding: 10px 0;
   font-size: 22px;
   color: black;
+  font-family:
 }
 
 /*
@@ -127,6 +128,10 @@
 #menuBurger input:checked ~ ul
 {
   transform: none;
+}
+a:hover
+{
+  color: black;
 }
 
 * {
