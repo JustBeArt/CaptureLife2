@@ -4,13 +4,10 @@
   position: relative;
   top: 50px;
   left: 50px;
-  padding-bottom: 50px;
-
   z-index: 1;
-  /*don't stress about it yet this is a browser prefix, so your navbar displays correctly
-  we will talk about that later*/
   -webkit-user-select: none;
   user-select: none;
+  padding-bottom: 50px;
 }
 
 #menuBurger input
@@ -30,9 +27,6 @@
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuBurger span
 {
   display: block;
@@ -75,7 +69,7 @@
 }
 
 /*
- * But let's hide the middle one.
+ * Hide the middle one.
  */
 #menuBurger input:checked ~ span:nth-last-child(3)
 {
@@ -84,7 +78,7 @@
 }
 
 /*
- * Ohyeah and the last one should go the other direction
+ * Last one should go the other direction
  */
 #menuBurger input:checked ~ span:nth-last-child(2)
 {
@@ -123,12 +117,13 @@
 }
 
 /*
- * And let's slide it in from the left
+ * Slide it in from the left
  */
 #menuBurger input:checked ~ ul
 {
   transform: none;
 }
+
 a:hover
 {
   color: black;
@@ -150,13 +145,13 @@ h1 {
 }
 
 h2 {
-font-family: 'Josefin Slab', serif;
-font-size: 250%;
-font-weight: bold;
-color: black;
-margin: 2rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
+  font-family: 'Josefin Slab', serif;
+  font-size: 250%;
+  font-weight: bold;
+  color: black;
+  margin: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
