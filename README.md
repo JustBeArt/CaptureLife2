@@ -1,29 +1,22 @@
-# Bootstrap
+# Capture Life Project
+The Capture Life website is a project that was done as part of the Apr-June 2019
+CodeFirstGirls Professionals Web Development Course.
+This was a collaboration between Justyna Borczynska, Hanna Aikas and Justine Livingstone.
 
-Welcome to twitter bootstrap! This is a template website that you will use to experiment with the framework, adding components and adjusting the styles accordingly. You will revisit this throughout the session but first, you will need to download it to your machine.
+The aim was to create a beautiful and functional website that showcases Justyna's photography.
+We intentionally kept the Homepage and Portfolio page minimalistic, to let the pictures speak for themselves.
+For those hungry for more written information, this is contained in the Contacts/About page.
 
-## First Task
-- Click on the 'Fork' icon on the top right of the page, and fork it into your github account.
-You will now have your own copy of this excercise on your github profile.
-- Navigate to your version of this project.
-- Click 'clone or download'.
-- Select the 'open in desktop' option.
-- Clone the repo into your coding_course folder, here is an example:
-- Open the folder in Atom.
+The website includes features such as:
+- Burger menu to navigate across the 3 pages
+- Photo carousel on Homepage
+- Modal images on Portfolio page - if you click on the images, they pop up with a text telling you about the photo
+- Social media buttons on bottom of Homepage and Contacts/About pages
 
-![Example of how to clone into folder using github desktop](./images/clone-in-desktop-example.png)
+We used HTML, CSS, Bootstrap and jQuery to deliver this project.
+We worked remotely, communicating via Slack, and handling version control via our own branches on GitHub.
 
-
-## Second Task
-Link the bootstrap CSS into your HTML.
-
-You can find this by looking for the CDN link on [Bootstrap.com](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-
-
-## Third Task
-1. Add an image into each of the columns and remove the text
-2. Add a new row in the page that has two columns, with a block of writing in each.
-3. Add a Carousel to the top of your page, with pictures! [instructions here](https://getbootstrap.com/docs/4.1/components/carousel/)
-4. Add a modal to your page [instructions here](https://getbootstrap.com/docs/4.1/components/modal/)
-5. Write over bootstrap! In the 'styles.css' file, change the design of the default CSS styles (this could be colors, fonts, images - the website is your oyster)
-6. Add any more boostrap componenets you think look cool!
+The project folder contains the HTML docs for the pages, and 2 separate CSS files.
+We wanted different styling for the Portfolio page, hence it has its own CSS file.
+The folder also contains the images (i.e. photographs).
+The logo on the Contacts/About page is via an Imgur link.
